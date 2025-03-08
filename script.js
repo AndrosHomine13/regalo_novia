@@ -53,16 +53,17 @@ function cambiarImagen(direccion) {
 
     let imagen = document.getElementById("imagen-principal");
     imagen.src = imagenes[indice];
-
-    // Mostrar el botón de la carta solo en la segunda imagen
-    let botonCarta = document.getElementById("boton-carta");
-    botonCarta.style.display = (indice === 1) ? "inline-block" : "none";
 }
 
 // Función para mostrar la carta sorpresa
 function mostrarCarta() {
     document.getElementById("carta").style.display = "block";
 }
+
+// Asegurar que el botón de la carta siempre sea visible
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("boton-carta").style.display = "inline-block";
+});
 
 // Iniciar corazones flotantes al cargar la página
 window.onload = function() {
