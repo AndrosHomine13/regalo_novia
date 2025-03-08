@@ -80,5 +80,5 @@ button:hover {
 
 .boton-sorpresa {
     background-color: #ffcc00;
-    display: none; /* Se oculta hasta que sea necesario */
+    display: inline-block; /* Ahora el botón siempre está visible */
 }
